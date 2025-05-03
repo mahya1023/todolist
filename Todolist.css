@@ -1,0 +1,302 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background: #E3F2FD;
+    padding: 0;
+    min-height: 90vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.deletBtn2 {
+    background: #E53935;
+}
+
+.DonBox {
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: snow;
+    border: none;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.DonBox svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: snow;
+    display: block;
+}
+
+.container {
+    max-width: 90%;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: solid dodgerblue;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: snow;
+    box-shadow: darkblue 3px 5px 10px;
+    border-radius: 5%;
+    overflow-x: hidden;
+}
+
+.container>* {
+    margin: 1rem 0.9rem 0.7rem 0;
+}
+
+.newDo {
+    max-width: 100%;
+    box-shadow: 0px 4px 10px rgba( 0, 0, 0.2);
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+.input {
+    flex-grow: 1;
+    border: none;
+    box-shadow: grey 3px 3px 5px;
+    padding: 0.6rem;
+    border-radius: 10px;
+}
+
+.Enter {
+    background: #1976D2;
+    color: snow;
+    box-shadow: grey 3px 3px 5px;
+    border-radius: 10px;
+    border: none;
+    padding: 0.6rem;
+}
+
+.title {
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+    border-radius: 5%;
+}
+
+.title span:nth-child(1) {
+    color: blue;
+    font-size: 3rem;
+}
+
+.title span:nth-child(2) {
+    color: blueviolet;
+    font-size: 2rem;
+}
+
+.title span:nth-child(1) {
+    color: palevioletred;
+    font-size: 2rem;
+}
+
+.title>span {
+    text-shadow: 0 0 3px snow;
+}
+
+.oldDo {
+    width: 99%;
+    max-height: 60vh;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: dodgerblue;
+    border-radius: 10px;
+    overflow-y: auto;
+    margin-right: 1.5rem;
+    display: none;
+}
+
+.oldDo>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: powderblue;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 0.6rem 0;
+}
+
+.divParents {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.deletBtn2 {
+    background: #E53935;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deletBtn2:hover {
+    background-color: green;
+}
+
+@media only screen and (max-width: 600) {
+    .container {
+        max-width: 95%;
+        padding: 0.5rem;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .newDo {
+        flex-direction: column;
+    }
+    .input,
+    .Enter {
+        width: 100%;
+    }
+    .oldDo>li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
